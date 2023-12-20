@@ -24,9 +24,9 @@ const HomePage = () => {
     const [currDate, setCurrDate] = useState(0);
     const base_url ="/weatherapp-reactjs-axios";
 
-    const getCurrLocation = () => {
-        alert('hi')
+    const getCurrLocation = () => {     
         if (navigator.geolocation) {
+            alert('enterd')
             navigator.geolocation.getCurrentPosition(success, error);
         }
         else{
@@ -47,7 +47,7 @@ const HomePage = () => {
     }
     const error = (error) => {
         console.log('Navigator api::', error);
-        alert('error',error)
+        alert(error.message)
     }
 
     const formHandler = (e) => {
