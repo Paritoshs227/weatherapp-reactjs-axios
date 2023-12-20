@@ -47,6 +47,7 @@ const HomePage = () => {
     }
     const error = (error) => {
         console.log('Navigator api::', error);
+        alert('error',error)
     }
 
     const formHandler = (e) => {
