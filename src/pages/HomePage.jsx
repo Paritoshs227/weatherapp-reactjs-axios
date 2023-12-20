@@ -25,8 +25,12 @@ const HomePage = () => {
     const base_url ="/weatherapp-reactjs-axios";
 
     const getCurrLocation = () => {
+        alert('hi')
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(success, error);
+        }
+        else{
+            alert('error')
         }
     };
 
