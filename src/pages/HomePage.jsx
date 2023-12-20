@@ -103,7 +103,7 @@ const HomePage = () => {
                     <ButtonComp buttonType="submit" btnCss="border rounded border-blue-600 bg-blue-600 text-white w-full outline-none" btnText="Submit" />
                 </form>
                 <h2 className=' font-bold text-white text-center mx-auto'>OR</h2>               
-                <img src={`${base_url}/assets/location.png`} className='w-10 me-5 ' onClick={getCurrLocation} />
+                <img src={`${base_url}/assets/location.png`} className='w-10 me-5 cursor-pointer' onClick={getCurrLocation} />
 
             </div>
             {inputErr && (
