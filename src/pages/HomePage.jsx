@@ -22,7 +22,7 @@ const HomePage = () => {
     const [sunrise, setSunrise] = useState(0);
     const [sunset, setSunset] = useState(0);
     const [currDate, setCurrDate] = useState(0);
-
+    const base_url ="/resturant-template-reactjs-react-router-tailwind";
 
     const getCurrLocation = () => {
         if (navigator.geolocation) {
@@ -100,7 +100,7 @@ const HomePage = () => {
                     <ButtonComp buttonType="submit" btnCss="border rounded border-blue-600 bg-blue-600 text-white w-full outline-none" btnText="Submit" />
                 </form>
                 <h2 className=' font-bold text-white text-center mx-auto'>OR</h2>
-                <img src='../assets/location.png' className='w-8 me-5' onClick={getCurrLocation} />
+                <img src={`${base_url}/assets/location.png`} className='w-8 me-5' onClick={getCurrLocation} />
 
             </div>
             {inputErr && (
