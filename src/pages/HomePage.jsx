@@ -105,8 +105,8 @@ const HomePage = () => {
                     <ButtonComp buttonType="submit" btnCss="border rounded border-blue-600 bg-blue-600 text-white w-full outline-none" btnText="Submit" />
                 </form>
                 <h2 className=' font-bold text-white text-center mx-auto'>OR</h2>
-                <ButtonComp buttonType="button" btnCss="border rounded border-blue-600 bg-blue-600 text-white outline-none px-3 py-2" onBtnClick={getCurrLocation} btnText="Lat Lon" />
-                {/* <img src={`${base_url}/assets/location.png`} className='w-10 me-5 ' onClick={getCurrLocation} /> */}
+                {/* <ButtonComp buttonType="button" btnCss="border rounded border-blue-600 bg-blue-600 text-white outline-none px-3 py-2" onBtnClick={getCurrLocation} btnText="Lat Lon" /> */}
+                <img src={`${base_url}/assets/location.png`} className='w-10 me-5 ' onClick={getCurrLocation} />
 
             </div>
             {inputErr && (
