@@ -30,7 +30,7 @@ const HomePage = () => {
             navigator.geolocation.getCurrentPosition(success, error);
         }
         else{
-            alert('error')
+            alert('Geolocation is not supported by this browser.')
         }
     };
 
