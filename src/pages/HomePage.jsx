@@ -25,8 +25,7 @@ const HomePage = () => {
     const base_url ="/weatherapp-reactjs-axios";
 
     const getCurrLocation = () => {     
-        if (navigator.geolocation) {
-            alert('enterd')
+        if (navigator.geolocation) {       
             navigator.geolocation.getCurrentPosition(success, error);
         }
         else{
@@ -46,8 +45,7 @@ const HomePage = () => {
             .catch(err => console.log('axios error::', err));
     }
     const error = (error) => {
-        console.log('Navigator api::', error);
-        alert(error.message)
+        console.log('Navigator api::', error);     
     }
 
     const formHandler = (e) => {
@@ -104,8 +102,7 @@ const HomePage = () => {
                     <InputBox label="City Name:" inputType="text" inputVal={cityName} onInputChange={(val) => setCityName(val)} inputContainerCss="w-full flex justify-between mb-3 item-center" inputCss="rounded px-3 w-3/5 outline-none" labelCss="w-2/5 font-bold text-white text-xs" />
                     <ButtonComp buttonType="submit" btnCss="border rounded border-blue-600 bg-blue-600 text-white w-full outline-none" btnText="Submit" />
                 </form>
-                <h2 className=' font-bold text-white text-center mx-auto'>OR</h2>
-                {/* <ButtonComp buttonType="button" btnCss="border rounded border-blue-600 bg-blue-600 text-white outline-none px-3 py-2" onBtnClick={getCurrLocation} btnText="Lat Lon" /> */}
+                <h2 className=' font-bold text-white text-center mx-auto'>OR</h2>               
                 <img src={`${base_url}/assets/location.png`} className='w-10 me-5 ' onClick={getCurrLocation} />
 
             </div>
