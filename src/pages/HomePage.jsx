@@ -96,11 +96,11 @@ const HomePage = () => {
                     <InputBox label="Latitude:-" inputType="tel" inputVal={lat} onInputChange={(val) => setLat(val)} inputContainerCss="w-full flex justify-between mb-3 item-center" inputCss="rounded px-3 w-3/5 outline-none" labelCss="w-2/5 font-bold text-white text-xs" />
                     <InputBox label="Longitude:" inputType="tel" inputVal={lon} onInputChange={(val) => setLon(val)} inputContainerCss="w-full flex justify-between mb-3 item-center" inputCss="rounded px-3 w-3/5 outline-none" labelCss="w-2/5 font-bold text-white text-xs" />
                     <h2 className=' font-bold text-white text-center mb-3'>OR</h2>
-                    <InputBox label="City Name:" inputType="tel" inputVal={cityName} onInputChange={(val) => setCityName(val)} inputContainerCss="w-full flex justify-between mb-3 item-center" inputCss="rounded px-3 w-3/5 outline-none" labelCss="w-2/5 font-bold text-white text-xs" />
+                    <InputBox label="City Name:" inputType="text" inputVal={cityName} onInputChange={(val) => setCityName(val)} inputContainerCss="w-full flex justify-between mb-3 item-center" inputCss="rounded px-3 w-3/5 outline-none" labelCss="w-2/5 font-bold text-white text-xs" />
                     <ButtonComp buttonType="submit" btnCss="border rounded border-blue-600 bg-blue-600 text-white w-full outline-none" btnText="Submit" />
                 </form>
                 <h2 className=' font-bold text-white text-center mx-auto'>OR</h2>
-                <img src={`${base_url}/assets/location.png`} className='w-8 me-5' onClick={getCurrLocation} />
+                <img src={`${base_url}/assets/location.png`} className='w-10 me-5 ' onClick={getCurrLocation} />
 
             </div>
             {inputErr && (
