@@ -22,7 +22,7 @@ const HomePage = () => {
     const [sunrise, setSunrise] = useState(0);
     const [sunset, setSunset] = useState(0);
     const [currDate, setCurrDate] = useState(0);
-    const base_url ="/resturant-template-reactjs-react-router-tailwind";
+    const base_url ="/weatherapp-reactjs-axios";
 
     const getCurrLocation = () => {
         if (navigator.geolocation) {
